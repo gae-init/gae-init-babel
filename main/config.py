@@ -35,6 +35,7 @@ DEFAULT_DB_LIMIT = 64
 LOCALE = {
   'en': u'English',
   'el': u'Ελληνικά',
+  'nl': u'Nederlands',
   'pl': u'Polski',
   'ru': u'Русский',
 }

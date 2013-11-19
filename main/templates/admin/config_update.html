@@ -8,17 +8,17 @@
 
   <div class="row">
     <div class="col-md-4 col-md-push-8">
-      <legend>Info</legend>
+      <legend>{{_('Info')}}</legend>
       <ul>
-        <li>For most of the settings you will have to restart the <a href="https://developers.google.com/appengine/docs/adminconsole/instances" target="_blank">instances</a></li>
-        <li>Site URL for <a href="https://developers.facebook.com/apps" target="_blank">Facebook application</a>: <em>{{request.host_url[:-1]}}</em></li>
-        <li>Callback URL for <a href="https://dev.twitter.com/apps" target="_blank">Twitter application</a>: <em>{{'%s%s' % (request.host_url[:-1], url_for('twitter_authorized'))}}</em></li>
+        <li>{{_('For most of the settings you will have to restart the')}} <a href="https://developers.google.com/appengine/docs/adminconsole/instances" target="_blank">{{_('instances')}}</a></li>
+        <li>{{_('Site URL for')}} <a href="https://developers.facebook.com/apps" target="_blank">{{_('Facebook application')}}</a>: <em>{{request.host_url[:-1]}}</em></li>
+        <li>{{_('Callback URL for')}} <a href="https://dev.twitter.com/apps" target="_blank">{{_('Twitter application')}}</a>: <em>{{'%s%s' % (request.host_url[:-1], url_for('twitter_authorized'))}}</em></li>
       </ul>
     </div>
     <div class="col-md-8 col-md-pull-4">
       <form class="row" method="POST" action="." novalidate>
         <fieldset class="col-sm-6">
-          <legend>General</legend>
+          <legend>{{_('General')}}</legend>
           {{form.csrf_token}}
 
           {{forms.text_field(form.brand_name)}}
@@ -30,14 +30,14 @@
           {{forms.select_field(form.announcement_type)}}
         </fieldset>
         <fieldset class="col-sm-6">
-          <legend>Third Party OAuth</legend>
+          <legend>{{_('Third Party OAuth')}}</legend>
           {{forms.text_field(form.facebook_app_id)}}
           {{forms.text_field(form.facebook_app_secret)}}
           {{forms.text_field(form.twitter_consumer_key)}}
           {{forms.text_field(form.twitter_consumer_secret)}}
         </fieldset>
         <fieldset class="col-sm-12">
-          <button type="submit" class="btn btn-primary btn-block btn-loading" data-loading-text="{{_('Updating Config..')}}">
+          <button type="submit" class="btn btn-primary btn-block btn-loading" data-loading-text="{{_('Updating Config...')}}">
             {{_('Update Config')}}
           </button>
         </fieldset>
