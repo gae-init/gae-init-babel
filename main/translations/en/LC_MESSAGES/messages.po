@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-19 01:25+0100\n"
+"POT-Creation-Date: 2013-11-19 12:09+0100\n"
 "PO-Revision-Date: 2013-11-18 22:59+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -98,21 +98,26 @@ msgstr ""
 msgid "Unsupported value for qop: %s."
 msgstr ""
 
-#: main/lib/httplib2/__init__.py:523 main/lib/httplib2/__init__.py:585
+#: main/lib/httplib2/__init__.py:523
 #, python-format
 msgid "Unsupported value for algorithm: %s.algorithm"
 msgstr ""
 
-#: main/lib/httplib2/__init__.py:582
+#: main/lib/httplib2/__init__.py:583
 msgid "The challenge doesn't contain a server nonce, or this one is empty."
 msgstr ""
 
-#: main/lib/httplib2/__init__.py:588
+#: main/lib/httplib2/__init__.py:587
 #, python-format
-msgid "Unsupported value for pw-algorithm: %s.pw-algorithm"
+msgid "Unsupported value for algorithm: %s."
 msgstr ""
 
-#: main/lib/httplib2/__init__.py:1340
+#: main/lib/httplib2/__init__.py:591
+#, python-format
+msgid "Unsupported value for pw-algorithm: %s."
+msgstr ""
+
+#: main/lib/httplib2/__init__.py:1343
 msgid "Redirected but the response is missing a Location: header."
 msgstr ""
 
@@ -306,6 +311,50 @@ msgstr ""
 msgid "User List"
 msgstr ""
 
+#: main/templates/admin/config_update.html:11
+msgid "Information"
+msgstr ""
+
+#: main/templates/admin/config_update.html:13
+msgid "For most of the settings you will have to restart the"
+msgstr ""
+
+#: main/templates/admin/config_update.html:13
+msgid "instances"
+msgstr ""
+
+#: main/templates/admin/config_update.html:14
+msgid "Site URL for"
+msgstr ""
+
+#: main/templates/admin/config_update.html:14
+msgid "Facebook application"
+msgstr ""
+
+#: main/templates/admin/config_update.html:15
+msgid "Callback URL for"
+msgstr ""
+
+#: main/templates/admin/config_update.html:15
+msgid "Twitter application"
+msgstr ""
+
+#: main/templates/admin/config_update.html:21
+msgid "General"
+msgstr ""
+
+#: main/templates/admin/config_update.html:33
+msgid "Third Party OAuth"
+msgstr ""
+
+#: main/templates/admin/config_update.html:40
+msgid "Updating Config..."
+msgstr ""
+
+#: main/templates/admin/config_update.html:41
+msgid "Update Config"
+msgstr ""
+
 #: main/templates/bit/footer.html:5
 msgid "Version"
 msgstr ""
@@ -433,7 +482,7 @@ msgid "Modified"
 msgstr ""
 
 #: main/templates/user_list.html:57
-msgid "Auth"
+msgid "Accounts"
 msgstr ""
 
 #: main/templates/user_list.html:64
@@ -452,16 +501,3 @@ msgstr ""
 #: main/templates/welcome.html:23 main/templates/welcome.html:27
 msgid "Heading"
 msgstr ""
-
-#~ msgid "Updating Config.."
-#~ msgstr ""
-
-#~ msgid "Update Config"
-#~ msgstr ""
-
-#~ msgid "Sending Feedback.."
-#~ msgstr ""
-
-#~ msgid "Updating Profile.."
-#~ msgstr ""
-

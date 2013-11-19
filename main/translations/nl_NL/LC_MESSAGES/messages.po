@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-19 01:25+0100\n"
+"POT-Creation-Date: 2013-11-19 12:09+0100\n"
 "PO-Revision-Date: 2013-11-18 23:02+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nl_NL <LL@li.org>\n"
@@ -58,11 +58,11 @@ msgstr "Krijg een visuele uitdaging"
 
 #: main/lib/flaskext/wtf/recaptcha/widgets.py:69
 msgid "Get an audio challenge"
-msgstr "Krijg een audio uitdaging"
+msgstr "Verkrijg een audio uitdaging"
 
 #: main/lib/flaskext/wtf/recaptcha/widgets.py:70
 msgid "Get a new challenge"
-msgstr "Krijg een nieuwe uitdaging"
+msgstr "Verkrijg een nieuwe uitdaging"
 
 #: main/lib/flaskext/wtf/recaptcha/widgets.py:71
 msgid "Type the two words:"
@@ -100,21 +100,26 @@ msgstr ""
 msgid "Unsupported value for qop: %s."
 msgstr "Niet-ondersteunde waarde voor qop: %s."
 
-#: main/lib/httplib2/__init__.py:523 main/lib/httplib2/__init__.py:585
+#: main/lib/httplib2/__init__.py:523
 #, python-format
 msgid "Unsupported value for algorithm: %s.algorithm"
 msgstr "Niet-ondersteunde waarde voor algoritme: %s.algorithm"
 
-#: main/lib/httplib2/__init__.py:582
+#: main/lib/httplib2/__init__.py:583
 msgid "The challenge doesn't contain a server nonce, or this one is empty."
 msgstr "De uitdaging bevat geen 'server nonce', of deze is leeg."
 
-#: main/lib/httplib2/__init__.py:588
+#: main/lib/httplib2/__init__.py:587
 #, python-format
-msgid "Unsupported value for pw-algorithm: %s.pw-algorithm"
-msgstr "Niet-ondersteunde waarde voor pw-algoritme: %s.algorithm"
+msgid "Unsupported value for algorithm: %s."
+msgstr "Niet-ondersteunde waarde voor algoritme: %s."
 
-#: main/lib/httplib2/__init__.py:1340
+#: main/lib/httplib2/__init__.py:591
+#, python-format
+msgid "Unsupported value for pw-algorithm: %s."
+msgstr "Niet-ondersteunde waarde voor pw-algoritme: %s."
+
+#: main/lib/httplib2/__init__.py:1343
 msgid "Redirected but the response is missing a Location: header."
 msgstr "Doorgestuurd, maar de respons mist een Locatie: header."
 
@@ -206,15 +211,15 @@ msgstr "Veld moet gelijk zijn aan %(other_name)s."
 #, python-format
 msgid "Field must be at least %(min)d character long."
 msgid_plural "Field must be at least %(min)d characters long."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Veld moet tenminste %(min)d karakter lang zijn."
+msgstr[1] "Veld moet tenminste %(min)d karakters lang zijn."
 
 #: main/lib/wtforms/validators.py:99
 #, python-format
 msgid "Field cannot be longer than %(max)d character."
 msgid_plural "Field cannot be longer than %(max)d characters."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Veld kan niet langer zijn dan %(max)d karakter."
+msgstr[1] "Veld kan niet langer zijn dan %(max)d karakters."
 
 #: main/lib/wtforms/validators.py:102
 #, python-format
@@ -310,6 +315,50 @@ msgstr "Feedback"
 msgid "User List"
 msgstr "Gebruikers lijst"
 
+#: main/templates/admin/config_update.html:11
+msgid "Information"
+msgstr "Informatie"
+
+#: main/templates/admin/config_update.html:13
+msgid "For most of the settings you will have to restart the"
+msgstr "Het grootste deel van de instellingen vereist een herstart van de"
+
+#: main/templates/admin/config_update.html:13
+msgid "instances"
+msgstr "instanties"
+
+#: main/templates/admin/config_update.html:14
+msgid "Site URL for"
+msgstr "Site URL voor"
+
+#: main/templates/admin/config_update.html:14
+msgid "Facebook application"
+msgstr "Facebook applicatie"
+
+#: main/templates/admin/config_update.html:15
+msgid "Callback URL for"
+msgstr "Callback URL voor"
+
+#: main/templates/admin/config_update.html:15
+msgid "Twitter application"
+msgstr "Twitter applicatie"
+
+#: main/templates/admin/config_update.html:21
+msgid "General"
+msgstr "Algemeen"
+
+#: main/templates/admin/config_update.html:33
+msgid "Third Party OAuth"
+msgstr "Derde partij OAuth"
+
+#: main/templates/admin/config_update.html:40
+msgid "Updating Config..."
+msgstr "Profiel bijwerken..."
+
+#: main/templates/admin/config_update.html:41
+msgid "Update Config"
+msgstr "Profiel bijwerken"
+
 #: main/templates/bit/footer.html:5
 msgid "Version"
 msgstr "Versie"
@@ -320,11 +369,11 @@ msgstr "Bekijk in JSON"
 
 #: main/templates/bit/header.html:5
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Wissel navigatie"
 
 #: main/templates/bit/user_menu.html:9
 msgid "Profile Settings"
-msgstr ""
+msgstr "Profiel instellingen"
 
 #: main/templates/bit/user_menu.html:16
 msgid "Sign out"
@@ -351,7 +400,6 @@ msgid "Any questions or suggestions are welcome"
 msgstr "Vragen en/of suggesties zijn welkom"
 
 #: main/templates/feedback.html:18
-#, fuzzy
 msgid "Sending Feedback..."
 msgstr "Feedback verzenden..."
 
@@ -369,22 +417,21 @@ msgstr "Gebruikersnaam"
 
 #: main/templates/profile.html:26
 msgid "Avatar"
-msgstr ""
+msgstr "Avatar"
 
 #: main/templates/profile.html:28
 msgid "Gravatar photo of"
-msgstr ""
+msgstr "Gravatar foto van"
 
 #: main/templates/profile.html:31
 msgid "Change on"
-msgstr ""
+msgstr "Verander op"
 
 #: main/templates/profile.html:32
 msgid "Gravatar"
-msgstr ""
+msgstr "Gravatar"
 
 #: main/templates/profile.html:40
-#, fuzzy
 msgid "Updating Profile..."
 msgstr "Profiel bijwerken..."
 
@@ -410,28 +457,27 @@ msgstr "Log in met Twitter"
 
 #: main/templates/user_list.html:19
 msgid "Limit"
-msgstr ""
+msgstr "Beperken"
 
 #: main/templates/user_list.html:19 main/templates/user_list.html:23
 msgid "Default"
-msgstr ""
+msgstr "Standaard"
 
 #: main/templates/user_list.html:33
-#, fuzzy
 msgid "Admins"
-msgstr "Titel"
+msgstr "Beheerders"
 
 #: main/templates/user_list.html:33 main/templates/user_list.html:37
 msgid "None"
-msgstr ""
+msgstr "Geen"
 
 #: main/templates/user_list.html:39
 msgid "Show Admins"
-msgstr ""
+msgstr "Toon beheerders"
 
 #: main/templates/user_list.html:40
 msgid "Hide Admins"
-msgstr ""
+msgstr "Verberg beheerders"
 
 #: main/templates/user_list.html:55
 msgid "Created"
@@ -442,16 +488,16 @@ msgid "Modified"
 msgstr "Gewijzigd"
 
 #: main/templates/user_list.html:57
-msgid "Auth"
-msgstr ""
+msgid "Accounts"
+msgstr "Accounts"
 
 #: main/templates/user_list.html:64
 msgid "Gravatar for"
-msgstr ""
+msgstr "Gravatar voor"
 
 #: main/templates/user_list.html:67
 msgid "Administrator"
-msgstr ""
+msgstr "Beheerder"
 
 #: main/templates/welcome.html:7
 msgid "Hello, world!"
@@ -461,4 +507,3 @@ msgstr "Hallo, wereld!"
 #: main/templates/welcome.html:23 main/templates/welcome.html:27
 msgid "Heading"
 msgstr "Titel"
-
