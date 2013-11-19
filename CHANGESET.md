@@ -1,3 +1,8 @@
+Version 0.9.1 - 2013-10-18
+--------------------------
+- Updated pytz to 2013.8 (and moved it to libx)
+- Updated babel to 1.3
+
 Version 0.9.0 - 2013-10-20
 --------------------------
 - Introduced `auth_ids` in the `User` model instead of separete auth ids per provider
