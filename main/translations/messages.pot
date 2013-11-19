@@ -1,4 +1,48 @@
-#: main/admin.py:48 main/templates/bit/user_menu.html:12
+#: main/admin.py:18
+msgid "Google Analytics ID"
+msgstr ""
+
+#: main/admin.py:21
+msgid "Announcement HTML"
+msgstr ""
+
+#: main/admin.py:24
+msgid "Announcement Type"
+msgstr ""
+
+#: main/admin.py:27
+msgid "Brand Name"
+msgstr ""
+
+#: main/admin.py:30
+msgid "Facebook App ID"
+msgstr ""
+
+#: main/admin.py:33
+msgid "Facebook App Secret"
+msgstr ""
+
+#: main/admin.py:36
+msgid "Feedback Email"
+msgstr ""
+
+#: main/admin.py:39
+msgid "Flask Secret Key"
+msgstr ""
+
+#: main/admin.py:42
+msgid "Default Locale"
+msgstr ""
+
+#: main/admin.py:45
+msgid "Twitter Consumer Key"
+msgstr ""
+
+#: main/admin.py:48
+msgid "Twitter Consumer Secret"
+msgstr ""
+
+#: main/admin.py:70 main/templates/bit/user_menu.html:12
 msgid "Admin Config"
 msgstr ""
 
@@ -23,7 +67,7 @@ msgstr ""
 msgid "Hello %(name)s, welcome to %(brand)s!!!"
 msgstr ""
 
-#: main/auth.py:376
+#: main/auth.py:378
 msgid "Sorry, but you could not sign in."
 msgstr ""
 
