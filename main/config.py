@@ -3,7 +3,7 @@
 import os
 import operator
 try:
-  # This part is surrounded in try/except because the this config.py file is
+  # This part is surrounded in try/except because this config.py file is
   # also used in the run.py script which is used to compile/minify the client
   # side files (*.less, *.coffee, *.js) and is not aware of the GAE
   import model
@@ -35,6 +35,7 @@ DEFAULT_DB_LIMIT = 64
 LOCALE = {
   'en': u'English',
   'el': u'Ελληνικά',
+  'nl': u'Nederlands',
   'pl': u'Polski',
   'ru': u'Русский',
 }

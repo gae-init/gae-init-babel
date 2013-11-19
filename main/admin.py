@@ -14,17 +14,39 @@ from main import app
 
 
 class ConfigUpdateForm(wtf.Form):
-  analytics_id = wtf.TextField('Analytics ID', filters=[util.strip_filter])
-  announcement_html = wtf.TextAreaField('Announcement HTML', filters=[util.strip_filter])
-  announcement_type = wtf.SelectField('Announcement Type', choices=[(t, t.title()) for t in model.Config.announcement_type._choices])
-  brand_name = wtf.TextField('Brand Name', [wtf.validators.required()], filters=[util.strip_filter])
-  facebook_app_id = wtf.TextField('Facebook App ID', filters=[util.strip_filter])
-  facebook_app_secret = wtf.TextField('Facebook App Secret', filters=[util.strip_filter])
-  feedback_email = wtf.TextField('Feedback Email', [wtf.validators.optional(), wtf.validators.email()], filters=[util.strip_filter])
-  flask_secret_key = wtf.TextField('Flask Secret Key', [wtf.validators.required()], filters=[util.strip_filter])
-  locale = wtf.SelectField('Default Locale', choices=config.LOCALE_SORTED)
-  twitter_consumer_key = wtf.TextField('Twitter Consumer Key', filters=[util.strip_filter])
-  twitter_consumer_secret = wtf.TextField('Twitter Consumer Secret', filters=[util.strip_filter])
+  analytics_id = wtf.TextField(
+    _('Google Analytics ID'),
+    filters=[util.strip_filter])
+  announcement_html = wtf.TextAreaField(
+    _('Announcement HTML'),
+    filters=[util.strip_filter])
+  announcement_type = wtf.SelectField(
+    _('Announcement Type'),
+    choices=[(t, t.title()) for t in model.Config.announcement_type._choices])
+  brand_name = wtf.TextField(
+    _('Brand Name'),
+    [wtf.validators.required()], filters=[util.strip_filter])
+  facebook_app_id = wtf.TextField(
+    _('Facebook App ID'),
+    filters=[util.strip_filter])
+  facebook_app_secret = wtf.TextField(
+    _('Facebook App Secret'),
+    filters=[util.strip_filter])
+  feedback_email = wtf.TextField(
+    _('Feedback Email'),
+    [wtf.validators.optional(), wtf.validators.email()], filters=[util.strip_filter])
+  flask_secret_key = wtf.TextField(
+    _('Flask Secret Key'),
+    [wtf.validators.required()], filters=[util.strip_filter])
+  locale = wtf.SelectField(
+    _('Default Locale'),
+    choices=config.LOCALE_SORTED)
+  twitter_consumer_key = wtf.TextField(
+    _('Twitter Consumer Key'),
+    filters=[util.strip_filter])
+  twitter_consumer_secret = wtf.TextField(
+    _('Twitter Consumer Secret'),
+    filters=[util.strip_filter])
 
 
 @app.route('/_s/admin/config/', endpoint='admin_config_update_service')

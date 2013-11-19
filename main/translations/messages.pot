@@ -1,0 +1,528 @@
+#: main/admin.py:18
+msgid "Google Analytics ID"
+msgstr ""
+
+#: main/admin.py:21
+msgid "Announcement HTML"
+msgstr ""
+
+#: main/admin.py:24
+msgid "Announcement Type"
+msgstr ""
+
+#: main/admin.py:27
+msgid "Brand Name"
+msgstr ""
+
+#: main/admin.py:30
+msgid "Facebook App ID"
+msgstr ""
+
+#: main/admin.py:33
+msgid "Facebook App Secret"
+msgstr ""
+
+#: main/admin.py:36
+msgid "Feedback Email"
+msgstr ""
+
+#: main/admin.py:39
+msgid "Flask Secret Key"
+msgstr ""
+
+#: main/admin.py:42
+msgid "Default Locale"
+msgstr ""
+
+#: main/admin.py:45
+msgid "Twitter Consumer Key"
+msgstr ""
+
+#: main/admin.py:48
+msgid "Twitter Consumer Secret"
+msgstr ""
+
+#: main/admin.py:70 main/templates/bit/user_menu.html:12
+msgid "Admin Config"
+msgstr ""
+
+#: main/auth.py:160
+msgid "Please sign in"
+msgstr ""
+
+#: main/auth.py:172
+msgid "You have been signed out."
+msgstr ""
+
+#: main/auth.py:191 main/auth.py:237
+msgid "You denied the request to sign in."
+msgstr ""
+
+#: main/auth.py:263
+msgid "Something went wrong with Twitter sign in. Please try again."
+msgstr ""
+
+#: main/auth.py:369
+#, python-format
+msgid "Hello %(name)s, welcome to %(brand)s!!!"
+msgstr ""
+
+#: main/auth.py:378
+msgid "Sorry, but you could not sign in."
+msgstr ""
+
+#: main/lib/flaskext/wtf/recaptcha/validators.py:34
+#: main/lib/wtforms/validators.py:198 main/lib/wtforms/validators.py:233
+msgid "This field is required."
+msgstr ""
+
+#: main/lib/flaskext/wtf/recaptcha/widgets.py:68
+msgid "Get a visual challenge"
+msgstr ""
+
+#: main/lib/flaskext/wtf/recaptcha/widgets.py:69
+msgid "Get an audio challenge"
+msgstr ""
+
+#: main/lib/flaskext/wtf/recaptcha/widgets.py:70
+msgid "Get a new challenge"
+msgstr ""
+
+#: main/lib/flaskext/wtf/recaptcha/widgets.py:71
+msgid "Type the two words:"
+msgstr ""
+
+#: main/lib/flaskext/wtf/recaptcha/widgets.py:72
+msgid "Type what you hear:"
+msgstr ""
+
+#: main/lib/flaskext/wtf/recaptcha/widgets.py:73
+msgid "Help"
+msgstr ""
+
+#: main/lib/flaskext/wtf/recaptcha/widgets.py:74
+msgid "Play sound again"
+msgstr ""
+
+#: main/lib/flaskext/wtf/recaptcha/widgets.py:75
+msgid "Download sound as MP3"
+msgstr ""
+
+#: main/lib/flaskext/wtf/recaptcha/widgets.py:76
+msgid "Incorrect. Try again."
+msgstr ""
+
+#: main/lib/httplib2/__init__.py:410
+#, python-format
+msgid "Content purported to be compressed with %s but failed to decompress."
+msgstr ""
+
+#: main/lib/httplib2/__init__.py:520
+#, python-format
+msgid "Unsupported value for qop: %s."
+msgstr ""
+
+#: main/lib/httplib2/__init__.py:523
+#, python-format
+msgid "Unsupported value for algorithm: %s.algorithm"
+msgstr ""
+
+#: main/lib/httplib2/__init__.py:583
+msgid "The challenge doesn't contain a server nonce, or this one is empty."
+msgstr ""
+
+#: main/lib/httplib2/__init__.py:587
+#, python-format
+msgid "Unsupported value for algorithm: %s."
+msgstr ""
+
+#: main/lib/httplib2/__init__.py:591
+#, python-format
+msgid "Unsupported value for pw-algorithm: %s."
+msgstr ""
+
+#: main/lib/httplib2/__init__.py:1343
+msgid "Redirected but the response is missing a Location: header."
+msgstr ""
+
+#: main/lib/wtforms/ext/appengine/fields.py:91
+#: main/lib/wtforms/ext/appengine/fields.py:168
+#: main/lib/wtforms/ext/appengine/fields.py:170
+#: main/lib/wtforms/fields/core.py:435
+msgid "Not a valid choice"
+msgstr ""
+
+#: main/lib/wtforms/ext/appengine/fields.py:189
+msgid "Not a valid list"
+msgstr ""
+
+#: main/lib/wtforms/ext/appengine/fields.py:208
+msgid "Not a valid integer list"
+msgstr ""
+
+#: main/lib/wtforms/ext/csrf/form.py:47
+msgid "Invalid CSRF Token"
+msgstr ""
+
+#: main/lib/wtforms/ext/csrf/session.py:57
+msgid "CSRF token missing"
+msgstr ""
+
+#: main/lib/wtforms/ext/csrf/session.py:65
+msgid "CSRF failed"
+msgstr ""
+
+#: main/lib/wtforms/ext/csrf/session.py:70
+msgid "CSRF token expired"
+msgstr ""
+
+#: main/lib/wtforms/ext/dateutil/fields.py:50
+msgid "Please input a date/time value"
+msgstr ""
+
+#: main/lib/wtforms/ext/dateutil/fields.py:62
+msgid "Invalid date/time input"
+msgstr ""
+
+#: main/lib/wtforms/fields/core.py:428
+msgid "Invalid Choice: could not coerce"
+msgstr ""
+
+#: main/lib/wtforms/fields/core.py:461
+msgid "Invalid choice(s): one or more data inputs could not be coerced"
+msgstr ""
+
+#: main/lib/wtforms/fields/core.py:468
+#, python-format
+msgid "'%(value)s' is not a valid choice for this field"
+msgstr ""
+
+#: main/lib/wtforms/fields/core.py:523
+msgid "Not a valid integer value"
+msgstr ""
+
+#: main/lib/wtforms/fields/core.py:573
+msgid "Not a valid decimal value"
+msgstr ""
+
+#: main/lib/wtforms/fields/core.py:600
+msgid "Not a valid float value"
+msgstr ""
+
+#: main/lib/wtforms/fields/core.py:659
+msgid "Not a valid datetime value"
+msgstr ""
+
+#: main/lib/wtforms/fields/core.py:676
+msgid "Not a valid date value"
+msgstr ""
+
+#: main/lib/wtforms/validators.py:55
+#, python-format
+msgid "Invalid field name '%s'."
+msgstr ""
+
+#: main/lib/wtforms/validators.py:63
+#, python-format
+msgid "Field must be equal to %(other_name)s."
+msgstr ""
+
+#: main/lib/wtforms/validators.py:96
+#, python-format
+msgid "Field must be at least %(min)d character long."
+msgid_plural "Field must be at least %(min)d characters long."
+msgstr[0] ""
+msgstr[1] ""
+
+#: main/lib/wtforms/validators.py:99
+#, python-format
+msgid "Field cannot be longer than %(max)d character."
+msgid_plural "Field cannot be longer than %(max)d characters."
+msgstr[0] ""
+msgstr[1] ""
+
+#: main/lib/wtforms/validators.py:102
+#, python-format
+msgid "Field must be between %(min)d and %(max)d characters long."
+msgstr ""
+
+#: main/lib/wtforms/validators.py:138
+#, python-format
+msgid "Number must be at least %(min)s."
+msgstr ""
+
+#: main/lib/wtforms/validators.py:140
+#, python-format
+msgid "Number must be at most %(max)s."
+msgstr ""
+
+#: main/lib/wtforms/validators.py:142
+#, python-format
+msgid "Number must be between %(min)s and %(max)s."
+msgstr ""
+
+#: main/lib/wtforms/validators.py:264
+msgid "Invalid input."
+msgstr ""
+
+#: main/lib/wtforms/validators.py:286
+msgid "Invalid email address."
+msgstr ""
+
+#: main/lib/wtforms/validators.py:318
+msgid "Invalid IP address."
+msgstr ""
+
+#: main/lib/wtforms/validators.py:367
+msgid "Invalid Mac address."
+msgstr ""
+
+#: main/lib/wtforms/validators.py:393
+msgid "Invalid URL."
+msgstr ""
+
+#: main/lib/wtforms/validators.py:412
+msgid "Invalid UUID."
+msgstr ""
+
+#: main/lib/wtforms/validators.py:440
+#, python-format
+msgid "Invalid value, must be one of: %(values)s."
+msgstr ""
+
+#: main/lib/wtforms/validators.py:472
+#, python-format
+msgid "Invalid value, can't be any of: %(values)s."
+msgstr ""
+
+#: main/main.py:53 main/templates/user_list.html:52
+msgid "Name"
+msgstr ""
+
+#: main/main.py:56 main/templates/user_list.html:54
+msgid "Email"
+msgstr ""
+
+#: main/main.py:60
+msgid "Language"
+msgstr ""
+
+#: main/main.py:86
+msgid "Profile"
+msgstr ""
+
+#: main/main.py:98
+msgid "Subject"
+msgstr ""
+
+#: main/main.py:101
+msgid "Message"
+msgstr ""
+
+#: main/main.py:104
+msgid "Email (optional)"
+msgstr ""
+
+#: main/main.py:127
+msgid "Thank you for your feedback!"
+msgstr ""
+
+#: main/main.py:134 main/templates/bit/contact_menu.html:3
+msgid "Feedback"
+msgstr ""
+
+#: main/main.py:162 main/templates/bit/user_menu.html:13
+msgid "User List"
+msgstr ""
+
+#: main/templates/admin/config_update.html:11
+msgid "Information"
+msgstr ""
+
+#: main/templates/admin/config_update.html:13
+msgid "For most of the settings you will have to restart the"
+msgstr ""
+
+#: main/templates/admin/config_update.html:13
+msgid "instances"
+msgstr ""
+
+#: main/templates/admin/config_update.html:14
+msgid "Site URL for"
+msgstr ""
+
+#: main/templates/admin/config_update.html:14
+msgid "Facebook application"
+msgstr ""
+
+#: main/templates/admin/config_update.html:15
+msgid "Callback URL for"
+msgstr ""
+
+#: main/templates/admin/config_update.html:15
+msgid "Twitter application"
+msgstr ""
+
+#: main/templates/admin/config_update.html:21
+msgid "General"
+msgstr ""
+
+#: main/templates/admin/config_update.html:33
+msgid "Third Party OAuth"
+msgstr ""
+
+#: main/templates/admin/config_update.html:40
+msgid "Updating Config..."
+msgstr ""
+
+#: main/templates/admin/config_update.html:41
+msgid "Update Config"
+msgstr ""
+
+#: main/templates/bit/footer.html:5
+msgid "Version"
+msgstr ""
+
+#: main/templates/bit/footer.html:8
+msgid "View in JSON"
+msgstr ""
+
+#: main/templates/bit/header.html:5
+msgid "Toggle navigation"
+msgstr ""
+
+#: main/templates/bit/user_menu.html:9
+msgid "Profile Settings"
+msgstr ""
+
+#: main/templates/bit/user_menu.html:16
+msgid "Sign out"
+msgstr ""
+
+#: main/templates/bit/user_menu.html:21
+msgid "Sign in"
+msgstr ""
+
+#: main/templates/error.html:8
+msgid "Oh no"
+msgstr ""
+
+#: main/templates/error.html:10
+msgid ""
+"Maybe it's our fault.. maybe it's yours.. but either case, this page is "
+"unavailable!"
+msgstr ""
+
+#: main/templates/feedback.html:6
+msgid "Any questions or suggestions are welcome"
+msgstr ""
+
+#: main/templates/feedback.html:18
+msgid "Sending Feedback..."
+msgstr ""
+
+#: main/templates/feedback.html:19
+msgid "Send Feedback"
+msgstr ""
+
+#: main/templates/profile.html:8
+msgid "Connected Accounts"
+msgstr ""
+
+#: main/templates/profile.html:17 main/templates/user_list.html:53
+msgid "Username"
+msgstr ""
+
+#: main/templates/profile.html:26
+msgid "Avatar"
+msgstr ""
+
+#: main/templates/profile.html:28
+msgid "Gravatar photo of"
+msgstr ""
+
+#: main/templates/profile.html:31
+msgid "Change on"
+msgstr ""
+
+#: main/templates/profile.html:32
+msgid "Gravatar"
+msgstr ""
+
+#: main/templates/profile.html:40
+msgid "Updating Profile..."
+msgstr ""
+
+#: main/templates/profile.html:41
+msgid "Update Profile"
+msgstr ""
+
+#: main/templates/signin.html:10
+msgid "It only takes 8 seconds"
+msgstr ""
+
+#: main/templates/signin.html:17
+msgid "Sign in with Google"
+msgstr ""
+
+#: main/templates/signin.html:23
+msgid "Sign in with Facebook"
+msgstr ""
+
+#: main/templates/signin.html:30
+msgid "Sign in with Twitter"
+msgstr ""
+
+#: main/templates/user_list.html:19
+msgid "Limit"
+msgstr ""
+
+#: main/templates/user_list.html:19 main/templates/user_list.html:23
+msgid "Default"
+msgstr ""
+
+#: main/templates/user_list.html:33
+msgid "Admins"
+msgstr ""
+
+#: main/templates/user_list.html:33 main/templates/user_list.html:37
+msgid "None"
+msgstr ""
+
+#: main/templates/user_list.html:39
+msgid "Show Admins"
+msgstr ""
+
+#: main/templates/user_list.html:40
+msgid "Hide Admins"
+msgstr ""
+
+#: main/templates/user_list.html:55
+msgid "Created"
+msgstr ""
+
+#: main/templates/user_list.html:56
+msgid "Modified"
+msgstr ""
+
+#: main/templates/user_list.html:57
+msgid "Accounts"
+msgstr ""
+
+#: main/templates/user_list.html:64
+msgid "Gravatar for"
+msgstr ""
+
+#: main/templates/user_list.html:67
+msgid "Administrator"
+msgstr ""
+
+#: main/templates/welcome.html:7
+msgid "Hello, world!"
+msgstr ""
+
+#: main/templates/welcome.html:15 main/templates/welcome.html:19
+#: main/templates/welcome.html:23 main/templates/welcome.html:27
+msgid "Heading"
+msgstr ""
+
