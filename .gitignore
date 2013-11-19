@@ -1,5 +1,3 @@
-
-
 *.mo
 *.pyc
 *.pyo
@@ -12,4 +10,3 @@ main/static/dst
 main/static/min
 node_modules
 temp/
-translations/messages.pot
