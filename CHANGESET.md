@@ -1,11 +1,12 @@
-Version 0.9.1 - 2013-10-18
+Version 0.9.x - 2013-10-18
 --------------------------
+DRAFT:
 - Updated pytz to 2013.8 (and moved it to libx)
 - Updated babel to 1.3
 
 Version 0.9.0 - 2013-10-20
 --------------------------
-- Introduced `auth_ids` in the `User` model instead of separete auth ids per provider
+- Introduced `auth_ids` in the `User` model instead of separate auth ids per provider
 - To upgrade the existing user data deploy the `gae-init-migrate` to your GAE app and run the upgrade task
 
 Version 0.8.4 - 2013-10-19
