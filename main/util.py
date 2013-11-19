@@ -60,7 +60,7 @@ def set_locale(locale, response):
 # Model manipulations
 ################################################################################
 def retrieve_dbs(query, order=None, limit=None, cursor=None, **filters):
-  ''' Retrieves entities from datastore, by applying cursor pagination
+  '''Retrieves entities from datastore, by applying cursor pagination
   and equality filters. Returns dbs and more cursor value
   '''
   limit = limit or config.DEFAULT_DB_LIMIT
@@ -183,7 +183,7 @@ def generate_more_url(more_cursor, base_url=None, cursor_name='cursor'):
 
 
 def uuid():
-  ''' Generates universal unique identifier
+  '''Generates universal unique identifier
   '''
   return uuid4().hex
 

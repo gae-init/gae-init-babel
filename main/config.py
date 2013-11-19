@@ -3,7 +3,7 @@
 import os
 import operator
 try:
-  # This part is surrounded in try/except because the this config.py file is
+  # This part is surrounded in try/except because this config.py file is
   # also used in the run.py script which is used to compile/minify the client
   # side files (*.less, *.coffee, *.js) and is not aware of the GAE
   import model

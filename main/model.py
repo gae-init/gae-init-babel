@@ -14,6 +14,7 @@ class Base(ndb.Model, modelx.BaseX):
   created = ndb.DateTimeProperty(auto_now_add=True)
   modified = ndb.DateTimeProperty(auto_now=True)
   version = ndb.IntegerProperty(default=TIMESTAMP)
+
   _PROPERTIES = {
       'key',
       'id',
@@ -29,7 +30,7 @@ class Config(Base, modelx.ConfigX):
   announcement_type = ndb.StringProperty(default='info', choices=[
       'info', 'warning', 'success', 'danger',
     ])
-  brand_name = ndb.StringProperty(default='gae-init')
+  brand_name = ndb.StringProperty(default='gae-init-babel')
   facebook_app_id = ndb.StringProperty(default='')
   facebook_app_secret = ndb.StringProperty(default='')
   feedback_email = ndb.StringProperty(default='')
@@ -67,7 +68,6 @@ class User(Base, modelx.UserX):
       'active',
       'admin',
       'auth_ids',
-      'avatar_url',
       'avatar_url',
       'email',
       'locale',
