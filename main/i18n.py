@@ -5,25 +5,24 @@ from babel import support
 import os
 
 
+def translations_path():
+  module_path = os.path.abspath(__file__)
+  dirname = os.path.join(os.path.dirname(module_path), 'translations')
+  return dirname
+
+
 def _get_translations():
-  """Returns the correct gettext translations.
-  Copy from flask-babel with some modifications.
-  """
-  ctx = _request_ctx_stack.top
-  if ctx is None:
+  try:
+    ctx = _request_ctx_stack.top
+    translations = getattr(ctx, 'wtforms_translations', None)
+    if translations is None:
+      translations = support.Translations.load(
+        translations_path(), [get_locale()], domain='messages'
+      )
+      ctx.wtforms_translations = translations
+    return translations
+  except:
     return None
-  # babel should be in extensions for get_locale
-  if 'babel' not in ctx.app.extensions:
-    return None
-  translations = getattr(ctx, 'wtforms_translations', None)
-  if translations is None:
-    module_path = os.path.abspath(__file__)
-    dirname = os.path.join(os.path.dirname(module_path), 'translations')
-    translations = support.Translations.load(
-      dirname, [get_locale()], domain='messages'
-    )
-    ctx.wtforms_translations = translations
-  return translations
 
 
 class Translations(object):
