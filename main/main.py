@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
 from google.appengine.api import mail
-from flask_wtf import Form
+from flask.ext.wtf import Form
 import wtforms
 import wtforms.validators
-from flask_babel import Babel
-from flask_babel import gettext as __
-from flask_babel import lazy_gettext as _
+from flask.ext.babel import Babel
+from flask.ext.babel import gettext as __
+from flask.ext.babel import lazy_gettext as _
 import flask
 
 import config
