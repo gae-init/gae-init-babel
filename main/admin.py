@@ -2,7 +2,7 @@
 
 from google.appengine.api import app_identity
 import flask
-from flask_wtf import Form  # TODO: replace with gae-init specific form, allowing translations to kick in as needed
+from flask_wtf import Form
 import wtforms
 import wtforms.validators
 from flaskext.babel import lazy_gettext as _

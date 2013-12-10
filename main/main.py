@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from google.appengine.api import mail
-from flask_wtf import Form  # TODO: replace with gae-init specific form, allowing translations to kick in as needed
+from flask_wtf import Form
 import wtforms
 import wtforms.validators
 from flaskext.babel import Babel
