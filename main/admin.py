@@ -2,11 +2,11 @@
 
 from google.appengine.api import app_identity
 import flask
-from flask_wtf import Form
+from flask.ext.wtf import Form
 import wtforms
 import wtforms.validators
-from flaskext.babel import lazy_gettext as _
-from flaskext.babel import gettext as __
+from flask.ext.babel import lazy_gettext as _
+from flask.ext.babel import gettext as __
 
 import auth
 import util
