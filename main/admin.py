@@ -5,8 +5,8 @@ import flask
 from flask_wtf import Form
 import wtforms
 import wtforms.validators
-from flaskext.babel import lazy_gettext as _
-from flaskext.babel import gettext as __
+from flask_babel import lazy_gettext as _
+from flask_babel import gettext as __
 
 import auth
 import util
