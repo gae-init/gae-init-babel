@@ -2,6 +2,7 @@
 
 from google.appengine.api import mail
 from flaskext import wtf
+import i18n
 from flaskext.babel import Babel
 from flaskext.babel import gettext as __
 from flaskext.babel import lazy_gettext as _
@@ -49,7 +50,7 @@ def sitemap():
 ################################################################################
 # Profile stuff
 ################################################################################
-class ProfileUpdateForm(wtf.Form):
+class ProfileUpdateForm(i18n.Form):
   name = wtf.TextField(_('Name'),
       [wtf.validators.required()], filters=[util.strip_filter],
     )
