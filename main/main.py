@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from google.appengine.api import mail
-from flask.ext.wtf import Form
+from i18n import Form
 import wtforms
 import wtforms.validators
 from flask.ext.babel import Babel

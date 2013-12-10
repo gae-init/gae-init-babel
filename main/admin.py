@@ -2,7 +2,7 @@
 
 from google.appengine.api import app_identity
 import flask
-from flask.ext.wtf import Form
+from i18n import Form
 import wtforms
 import wtforms.validators
 from flask.ext.babel import lazy_gettext as _
