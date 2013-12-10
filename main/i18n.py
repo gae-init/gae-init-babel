@@ -20,26 +20,26 @@ def _get_translations():
     module_path = os.path.abspath(__file__)
     dirname = os.path.join(os.path.dirname(module_path), 'translations')
     translations = support.Translations.load(
-        dirname, [get_locale()], domain='messages'
+      dirname, [get_locale()], domain='messages'
     )
     ctx.wtforms_translations = translations
   return translations
 
 
 class Translations(object):
-    def gettext(self, string):
-        t = _get_translations()
-        if t is None:
-            return string
-        return t.ugettext(string)
+  def gettext(self, string):
+    t = _get_translations()
+    if t is None:
+      return string
+    return t.ugettext(string)
 
-    def ngettext(self, singular, plural, n):
-        t = _get_translations()
-        if t is None:
-            if n == 1:
-                return singular
-            return plural
-        return t.ungettext(singular, plural, n)
+  def ngettext(self, singular, plural, n):
+    t = _get_translations()
+    if t is None:
+      if n == 1:
+        return singular
+      return plural
+    return t.ungettext(singular, plural, n)
 
 
 translations = Translations()
