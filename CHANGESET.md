@@ -1,7 +1,15 @@
-Version 0.9.0 - 2013-10-20
+Version 0.9.0 - tbd
 --------------------------
+- Updated Flask-WTF to 0.9.3
 - Introduced `auth_ids` in the `User` model instead of separete auth ids per provider
 - To upgrade the existing user data deploy the `gae-init-migrate` to your GAE app and run the upgrade task
+
+### Upgrading from older versions to 0.9.0:
+
+Update your forms to use Form from flask_wtf (instead of flask.ext.wtf).
+You will also need to import wtforms and wtforms.validators directly
+as they are no longer part of the Flask-WTF package, see:
+https://flask-wtf.readthedocs.org/en/latest/upgrade.html#version-0-9-0
 
 Version 0.8.4 - 2013-10-19
 --------------------------
