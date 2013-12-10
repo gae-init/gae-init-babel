@@ -6,9 +6,9 @@ Version 0.9.0 - tbd
 
 ### Upgrading from older versions to 0.9.0:
 
-Update your forms to use Form from flask_wtf (instead of flask.ext.wtf).
-You will also need to import wtforms and wtforms.validators directly
-as they are no longer part of the Flask-WTF package, see:
+Update your forms to use `Form` from `flask_wtf` (instead of `flask.ext.wtf`).
+You will also need to import `wtforms` and `wtforms.validators` directly
+as they are no longer part of the Flask-WTF package since v0.9.0, see:
 https://flask-wtf.readthedocs.org/en/latest/upgrade.html#version-0-9-0
 
 Version 0.8.4 - 2013-10-19
