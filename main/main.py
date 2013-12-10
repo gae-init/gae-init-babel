@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 
 from google.appengine.api import mail
-from flaskext import wtf
+from flask_wtf import Form  # TODO: replace with gae-init specific form, allowing translations to kick in as needed
+import wtforms
+import wtforms.validators
 from flaskext.babel import Babel
 from flaskext.babel import gettext as __
 from flaskext.babel import lazy_gettext as _
@@ -49,15 +51,15 @@ def sitemap():
 ################################################################################
 # Profile stuff
 ################################################################################
-class ProfileUpdateForm(wtf.Form):
-  name = wtf.TextField(_('Name'),
-      [wtf.validators.required()], filters=[util.strip_filter],
+class ProfileUpdateForm(Form):
+  name = wtforms.TextField(_('Name'),
+      [wtforms.validators.required()], filters=[util.strip_filter],
     )
-  email = wtf.TextField(_('Email'),
-      [wtf.validators.optional(), wtf.validators.email()],
+  email = wtforms.TextField(_('Email'),
+      [wtforms.validators.optional(), wtforms.validators.email()],
       filters=[util.email_filter],
     )
-  locale = wtf.SelectField(_('Language'),
+  locale = wtforms.SelectField(_('Language'),
       choices=config.LOCALE_SORTED, filters=[util.strip_filter],
     )
 
@@ -94,15 +96,15 @@ def profile():
 ################################################################################
 # Feedback
 ################################################################################
-class FeedbackForm(wtf.Form):
-  subject = wtf.TextField(_('Subject'),
-      [wtf.validators.required()], filters=[util.strip_filter],
+class FeedbackForm(Form):
+  subject = wtforms.TextField(_('Subject'),
+      [wtforms.validators.required()], filters=[util.strip_filter],
     )
-  message = wtf.TextAreaField(_('Message'),
-      [wtf.validators.required()], filters=[util.strip_filter],
+  message = wtforms.TextAreaField(_('Message'),
+      [wtforms.validators.required()], filters=[util.strip_filter],
     )
-  email = wtf.TextField(_('Email (optional)'),
-      [wtf.validators.optional(), wtf.validators.email()],
+  email = wtforms.TextField(_('Email (optional)'),
+      [wtforms.validators.optional(), wtforms.validators.email()],
       filters=[util.strip_filter],
     )
 
