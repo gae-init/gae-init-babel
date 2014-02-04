@@ -59,7 +59,7 @@ class User(Base, modelx.UserX):
   name = ndb.StringProperty(indexed=True, required=True)
   username = ndb.StringProperty(indexed=True, required=True)
   email = ndb.StringProperty(indexed=True, default='')
-  locale = ndb.StringProperty(default='')
+  locale = ndb.StringProperty(indexed=False, default='')
   auth_ids = ndb.StringProperty(indexed=True, repeated=True)
 
   active = ndb.BooleanProperty(default=True)
