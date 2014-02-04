@@ -36,7 +36,7 @@ class Config(Base, modelx.ConfigX):
   facebook_app_secret = ndb.StringProperty(default='')
   feedback_email = ndb.StringProperty(default='')
   flask_secret_key = ndb.StringProperty(default=util.uuid())
-  locale = ndb.StringProperty(default='en')
+  locale = ndb.StringProperty(indexed=False, default='en')
   twitter_consumer_key = ndb.StringProperty(default='')
   twitter_consumer_secret = ndb.StringProperty(default='')
 
