@@ -33,20 +33,24 @@ def check_locale(locale):
 
 @babel.localeselector
 def get_locale():
-  locale = flask.session.pop('locale', None)
-  if not locale:
-    locale = flask.request.cookies.get('locale', None)
+  try:
+    return flask.request.locale
+  except:
+    locale = flask.session.pop('locale', None)
     if not locale:
-      locale = flask.request.accept_languages.best_match(
-        matches=config.LOCALE.keys(),
-        default=config.LOCALE_DEFAULT)
-  return check_locale(locale)
+      locale = flask.request.cookies.get('locale', None)
+      if not locale:
+        locale = flask.request.accept_languages.best_match(
+          matches=config.LOCALE.keys(),
+          default=config.LOCALE_DEFAULT)
+    return check_locale(locale)
 
 
 @flask.request_started.connect_via(app)
 def request_started(sender, **extra):
-  flask.request.locale = get_locale()
-  flask.request.locale_html = get_locale().replace('_', '-')
+  locale = get_locale()
+  flask.request.locale = locale
+  flask.request.locale_html = locale.replace('_', '-')
 
 
 @app.route('/l/<path:locale>/')
