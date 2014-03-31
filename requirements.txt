@@ -1,4 +1,4 @@
-git+https://github.com/joernhees/babel@zipcompat
+git+https://github.com/joernhees/babel@zipcompat-build
 blinker
 flask
 Flask-Babel
