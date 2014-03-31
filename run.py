@@ -280,7 +280,15 @@ def exists_venv():
   return bool(spawn.find_executable('virtualenv'))
 
 
-def install_venv(pip_commands):
+def is_global_py_pkg(pkg_name):
+  try:
+    __import__(pkg_name)
+    return True
+  except ImportError:
+    return False
+
+
+def exec_pip_commands(pip_commands):
   if not pip_commands:
     return
   is_windows = platform.system() == 'Windows'
@@ -326,14 +334,6 @@ def install_venv(pip_commands):
   os.system(script)
 
 
-def is_global_py_pkg(pkg_name):
-  try:
-    __import__(pkg_name)
-    return True
-  except ImportError:
-    return False
-
-
 def install_py_libs():
   required = get_py_libs_required()
   installed = listdir(DIR_LIB, split_ext=True)
@@ -358,7 +358,7 @@ def install_py_libs():
         pip_commands.append(pip_cmd % (
             '--install-option="--prefix=%s"' % os.path.abspath(DIR_VENV))
           )
-  install_venv(pip_commands)
+  exec_pip_commands(pip_commands)
 
   exclude_ext = ['.pth', '.pyc', '.egg-info', '.dist-info']
   exclude_prefix = ['setuptools-', 'pip-', 'Pillow-']
