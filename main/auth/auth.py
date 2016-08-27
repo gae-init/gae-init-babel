@@ -462,7 +462,9 @@ def signin_user_db(user_db):
   flask.session.pop('auth-params', None)
   if flask_login.login_user(flask_user_db, remember=auth_params['remember']):
     user_db.put_async()
-    return flask.redirect(util.get_next_url(auth_params['next']))
+    response = flask.redirect(util.get_next_url(auth_params['next']))
+    util.set_locale(check_locale(user_db.locale), response)
+    return response
   flask.flash(__('Sorry, but you could not sign in.'), category='danger')
   return flask.redirect(flask.url_for('signin'))
 
