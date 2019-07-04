@@ -4,7 +4,7 @@ flask-login==0.4.1
 flask-oauthlib==0.9.5
 flask-restful==0.3.7
 flask-wtf==0.14.2
-flask==1.0.3
+flask==1.0.4
 git+https://github.com/joernhees/babel@zip-2.3.4
 jinja2==2.10.1
 oauthlib==2.1.0
