@@ -28,7 +28,7 @@ app.jinja_env.globals.update(
 )
 app.config['BABEL_DEFAULT_LOCALE'] = config.LOCALE_DEFAULT
 babel = flask_babel.Babel(app)
-talisman = flask_talisman.Talisman(babel, content_security_policy=config.CSP)
+talisman = flask_talisman.Talisman(app, content_security_policy=config.CSP)
 
 import auth
 import control
