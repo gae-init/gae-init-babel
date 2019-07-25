@@ -3,6 +3,7 @@ flask-babel==0.12.2
 flask-login==0.4.1
 flask-oauthlib==0.9.5
 flask-restful==0.3.7
+flask-talisman==0.7.0
 flask-wtf==0.14.2
 flask==1.1.1
 git+https://github.com/joernhees/babel@zip-2.3.4
@@ -12,4 +13,4 @@ pyjwt==1.7.1
 requests-oauthlib==1.1.0
 simplejson==3.16.0
 unidecode==1.1.1
-webargs==5.3.2
+webargs==5.4.0

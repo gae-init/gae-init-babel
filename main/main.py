@@ -3,6 +3,7 @@
 from datetime import datetime
 import flask
 import flask_babel
+import flask_talisman
 
 import config
 import util
@@ -27,6 +28,7 @@ app.jinja_env.globals.update(
 )
 app.config['BABEL_DEFAULT_LOCALE'] = config.LOCALE_DEFAULT
 babel = flask_babel.Babel(app)
+talisman = flask_talisman.Talisman(babel, content_security_policy=config.CSP)
 
 import auth
 import control
