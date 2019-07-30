@@ -101,8 +101,6 @@ class AuthUpdateForm(i18n.Form):
   github_client_secret = wtforms.StringField(model.Config.github_client_secret._verbose_name, filters=[util.strip_filter])
   google_client_id = wtforms.StringField(model.Config.google_client_id._verbose_name, filters=[util.strip_filter])
   google_client_secret = wtforms.StringField(model.Config.google_client_secret._verbose_name, filters=[util.strip_filter])
-  instagram_client_id = wtforms.StringField(model.Config.instagram_client_id._verbose_name, filters=[util.strip_filter])
-  instagram_client_secret = wtforms.StringField(model.Config.instagram_client_secret._verbose_name, filters=[util.strip_filter])
   microsoft_client_id = wtforms.StringField(model.Config.microsoft_client_id._verbose_name, filters=[util.strip_filter])
   microsoft_client_secret = wtforms.StringField(model.Config.microsoft_client_secret._verbose_name, filters=[util.strip_filter])
   twitter_consumer_key = wtforms.StringField(model.Config.twitter_consumer_key._verbose_name, filters=[util.strip_filter])
