@@ -2,7 +2,7 @@ authlib==0.13
 blinker==1.4
 flask-babel==0.12.2
 flask-login==0.4.1
-flask-restful==0.3.7
+flask-restful==0.3.8
 flask-wtf==0.14.2
 flask==1.1.1
 git+https://github.com/joernhees/babel@zip-2.3.4
