@@ -1,4 +1,4 @@
-authlib==0.13
+authlib==0.14.1
 blinker==1.4
 flask-babel==1.0.0
 flask-login==0.5.0
